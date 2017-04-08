@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	margin: 0 auto;
+	height: 1000px;
+	width: 1500px;
+}
+
+#carousel {
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	height: 500px;
+	width: 600px;
+	overflow: hidden;
+}
+
+#carousel ul {
+	font-size: 0;
+	min-height: 500px;
+	width: 3000px;
+}
+
+#carousel ul li {
+	display: inline-block;
+	float: right;
+	list-style: none;
+	height: 500px;
+	width: 600px;
+}
+
+#carousel ul li img {
+	height: 100%;
+	width: 100%;
+}
+
