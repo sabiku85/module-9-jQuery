@@ -5,16 +5,25 @@
 }
 
 body {
+	background-color: #CCC;
 	position: relative;
 	margin: 0 auto;
 	height: 1000px;
 	width: 1500px;
 }
 
-#carousel {
+.wrapper {
 	position: absolute;
 	top: 25%;
 	left: 30%;
+	height: 500px;
+	width: 600px;
+}
+
+#carousel {
+	border: 15px solid #809BBD;
+	border-radius: 15px;
+	box-shadow: 0 0 20px #58779D;
 	height: 500px;
 	width: 600px;
 	overflow: hidden;
@@ -28,7 +37,7 @@ body {
 
 #carousel ul li {
 	display: inline-block;
-	float: right;
+	float: left;
 	list-style: none;
 	height: 500px;
 	width: 600px;
@@ -39,3 +48,59 @@ body {
 	width: 100%;
 }
 
+/* dodanie bocznych przycisków i kontrolek */
+
+.side-buttons,
+.controls {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+}
+
+.next,
+.previous {
+	display: inline-block;
+	min-height: 100px;
+	min-width: 100px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.next {
+	position: absolute;
+	top: 40%;
+	left: 80%;
+}
+
+.previous {
+	position: absolute;
+	top: 40%;
+	left: 5%;
+}
+
+.next i.fa,
+.previous i.fa {
+	font-size: 100px;
+	color: #ecfc0f;
+	opacity: .6;
+}
+
+.controls-wrapper {
+	position: absolute;
+	top: 80%;
+	left: 30%;
+}
+
+.controls a {
+	display: inline-block;
+	font-size: 36px;
+	width: 55px;
+	color: #ecfc0f;
+	opacity: .6;
+}
+
+controls a i.fa {
+	width: 100%;
+	height: 100%;
+}
